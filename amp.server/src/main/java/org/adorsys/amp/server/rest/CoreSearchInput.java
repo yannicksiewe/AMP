@@ -15,7 +15,7 @@ import org.codehaus.jackson.annotate.JsonTypeInfo.Id;
  *
  */
 @JsonTypeInfo(use=Id.CLASS, include=As.PROPERTY, property="className")
-public abstract class CoreSearchInput<T> {
+public class CoreSearchInput<T> {
 	public static final int MAX_MAX = 200;
 
 	/**

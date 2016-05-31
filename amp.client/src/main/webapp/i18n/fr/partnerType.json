@@ -1,0 +1,10 @@
+{
+    "ampfrontApp": {
+        "PartnerType" : {
+            "null": "",
+            "AMBASSY": "AMBASSY",
+            "COMPANY": "COMPANY",
+            "ORGANISATION": "ORGANISATION"
+        }
+    }
+}

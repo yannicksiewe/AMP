@@ -1,0 +1,112 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myAmpUserLabel" translate="ampfrontApp.ampUser.home.createOrEditLabel">Create or edit a Amp User</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.ampUser.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.ampUser.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.ouIdentif" for="field_ouIdentif">Ou Identif</label>
+            <input type="text" class="form-control" name="ouIdentif" id="field_ouIdentif"
+                    ng-model="vm.ampUser.ouIdentif"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.loginName" for="field_loginName">Login Name</label>
+            <input type="text" class="form-control" name="loginName" id="field_loginName"
+                    ng-model="vm.ampUser.loginName"
+                    required />
+            <div ng-show="editForm.loginName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.loginName.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.loginAlias" for="field_loginAlias">Login Alias</label>
+            <input type="text" class="form-control" name="loginAlias" id="field_loginAlias"
+                    ng-model="vm.ampUser.loginAlias"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.email" for="field_email">Email</label>
+            <input type="email" class="form-control" name="email" id="field_email"
+                    ng-model="vm.ampUser.email"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.fullName" for="field_fullName">Full Name</label>
+            <input type="text" class="form-control" name="fullName" id="field_fullName"
+                    ng-model="vm.ampUser.fullName"
+                    required />
+            <div ng-show="editForm.fullName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.fullName.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.pwdHashed" for="field_pwdHashed">Pwd Hashed</label>
+            <input type="text" class="form-control" name="pwdHashed" id="field_pwdHashed"
+                    ng-model="vm.ampUser.pwdHashed"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.disableLogin" for="field_disableLogin">Disable Login</label>
+            <input type="checkbox" class="form-control" name="disableLogin" id="field_disableLogin"
+                    ng-model="vm.ampUser.disableLogin"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.accountLocked" for="field_accountLocked">Account Locked</label>
+            <input type="checkbox" class="form-control" name="accountLocked" id="field_accountLocked"
+                    ng-model="vm.ampUser.accountLocked"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.credtlExpir" for="field_credtlExpir">Credt Expir</label>
+                <div class="input-group">
+                    <input id="field_credtlExpir" type="text" class="form-control" name="credtlExpir" datetime-picker="{{dateformat}}" ng-model="vm.ampUser.credtlExpir" is-open="vm.datePickerOpenStatus.credtlExpir"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('credtlExpir')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.accountExpir" for="field_accountExpir">Account Expir</label>
+                <div class="input-group">
+                    <input id="field_accountExpir" type="text" class="form-control" name="accountExpir" datetime-picker="{{dateformat}}" ng-model="vm.ampUser.accountExpir" is-open="vm.datePickerOpenStatus.accountExpir"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('accountExpir')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.ampUser.langIso2" for="field_langIso2">Lang Iso 2</label>
+            <input type="text" class="form-control" name="langIso2" id="field_langIso2"
+                    ng-model="vm.ampUser.langIso2"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

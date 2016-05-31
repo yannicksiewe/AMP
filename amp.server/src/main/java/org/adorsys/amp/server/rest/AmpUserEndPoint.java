@@ -9,6 +9,8 @@ import javax.ws.rs.Path;
 import org.adorsys.amp.server.ejb.AmpUserEjb;
 import org.adorsys.amp.server.ejb.CoreAbstEjb;
 import org.adorsys.amp.server.jpa.AmpUser;
+import org.adorsys.amp.server.jpa.AmpUserSearchInput;
+import org.adorsys.amp.server.jpa.AmpUserSearchResult;
 import org.adorsys.amp.server.jpa.AmpUser_;
 
 @Path("ampuser")
@@ -28,14 +30,14 @@ public class AmpUserEndPoint extends CoreAbstEntityEndpoint<AmpUser>{
 
 	@Override
 	protected CoreSearchInput<AmpUser> newSearchInput() {
-		return new CoreSearchInput<AmpUser>() {
+		return new AmpUserSearchInput() {
 		};
 	}
 
 	@Override
 	protected CoreSearchResult<AmpUser> newSearchResult(Long count, Long total, List<AmpUser> resultList,
 			CoreSearchInput<AmpUser> searchInput) {
-		return new CoreSearchResult<AmpUser>(count, total, resultList, searchInput);
+		return new AmpUserSearchResult(count, total, resultList, searchInput);
 	}
 
 }
