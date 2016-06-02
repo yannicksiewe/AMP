@@ -1,0 +1,24 @@
+{
+    "ampfrontApp": {
+        "partnerService" : {
+            "home": {
+                "title": "PartnerServices",
+                "createLabel": "Créer un nouveau Partner Service",
+                "createOrEditLabel": "Créer ou éditer un Partner Service",
+                "search": "Recherche pour Partner Service"
+            },
+            "created": "Un nouveau Partner Service a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Partner Service avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Partner Service avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Partner Service {{ id }} ?"
+            },
+            "detail": {
+                "title": "Partner Service"
+            },
+            "serviceName": "Service Name",
+            "description": "Description",
+            "partnerId": "Partner Id"
+        }
+    }
+}

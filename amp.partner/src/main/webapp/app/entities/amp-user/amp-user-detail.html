@@ -1,0 +1,69 @@
+
+<div>
+    <div class="row">
+        <h2 class="col-lg-4"><span translate="ampfrontApp.ampUser.detail.title">Amp User</span> {{vm.ampUser.id}}</h2>
+        <div class="col-lg-4">
+            <button class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span>&nbsp;<span > Activer</span>
+            </button>
+            <button class="btn btn-danger">
+                <span class="glyphicon glyphicon-retweet"></span>&nbsp;<span > Regénérer le mot de pass</span>
+            </button>
+        </div>
+    </div>
+
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="ampfrontApp.ampUser.ouIdentif">Ou Identif</span></dt>
+        <dd>
+            <span>{{vm.ampUser.ouIdentif}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.loginName">Login Name</span></dt>
+        <dd>
+            <span>{{vm.ampUser.loginName}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.loginAlias">Login Alias</span></dt>
+        <dd>
+            <span>{{vm.ampUser.loginAlias}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.email">Email</span></dt>
+        <dd>
+            <span>{{vm.ampUser.email}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.fullName">Full Name</span></dt>
+        <dd>
+            <span>{{vm.ampUser.fullName}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.pwdHashed">Pwd Hashed</span></dt>
+        <dd>
+            <span>{{vm.ampUser.pwdHashed}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.disableLogin">Disable Login</span></dt>
+        <dd>
+            <span>{{vm.ampUser.disableLogin}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.accountLocked">Account Locked</span></dt>
+        <dd>
+            <span>{{vm.ampUser.accountLocked}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.credtExpir">Credt Expir</span></dt>
+        <dd>
+            <span>{{vm.ampUser.credtExpir | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.accountExpir">Account Expir</span></dt>
+        <dd>
+            <span>{{vm.ampUser.accountExpir | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.ampUser.langIso2">Lang Iso 2</span></dt>
+        <dd>
+            <span>{{vm.ampUser.langIso2}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

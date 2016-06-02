@@ -373,6 +373,8 @@
 	</build>
 	<modules>
 		<module>amp.server</module>
-		<module>amp.client</module>
+		<module>amp.admin</module>
+		<module>amp.member</module>
+		<module>amp.partner</module>
 	</modules>
 </project>

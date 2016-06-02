@@ -1,0 +1,162 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myPartnerLabel" translate="ampfrontApp.partner.home.createOrEditLabel">Create or edit a Partner</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.partner.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.partner.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.country" for="field_country">Country</label>
+            <input type="text" class="form-control" name="country" id="field_country"
+                    ng-model="vm.partner.country"
+                    required />
+            <div ng-show="editForm.country.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.country.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.companyName" for="field_companyName">Company Name</label>
+            <input type="text" class="form-control" name="companyName" id="field_companyName"
+                    ng-model="vm.partner.companyName"
+                    required />
+            <div ng-show="editForm.companyName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.companyName.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_sigle">Sigle</label>
+            <input type="text" class="form-control" name="companyName" id="field_sigle"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.representant" for="field_representant">Representant</label>
+            <input type="text" class="form-control" name="representant" id="field_representant"
+                    ng-model="vm.partner.representant"
+                    required />
+            <div ng-show="editForm.representant.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.representant.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.tradeRegisterNbr" for="field_tradeRegisterNbr">Trade Register Nbr</label>
+            <input type="text" class="form-control" name="tradeRegisterNbr" id="field_tradeRegisterNbr"
+                    ng-model="vm.partner.tradeRegisterNbr"
+                    required />
+            <div ng-show="editForm.tradeRegisterNbr.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.tradeRegisterNbr.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.ratepayerNbr" for="field_ratepayerNbr">Ratepayer Nbr</label>
+            <input type="text" class="form-control" name="ratepayerNbr" id="field_ratepayerNbr"
+                    ng-model="vm.partner.ratepayerNbr"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.patent" for="field_patent">Patent</label>
+            <input type="text" class="form-control" name="patent" id="field_patent"
+                    ng-model="vm.partner.patent"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.companyCreationDate" for="field_companyCreationDate">Company Creation Date</label>
+                <div class="input-group">
+                    <input id="field_companyCreationDate" type="text" class="form-control" name="companyCreationDate" datetime-picker="{{dateformat}}" ng-model="vm.partner.companyCreationDate" is-open="vm.datePickerOpenStatus.companyCreationDate"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('companyCreationDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.businessField" for="field_businessField">Business Field</label>
+            <input type="text" class="form-control" name="businessField" id="field_businessField"
+                    ng-model="vm.partner.businessField"
+                    required />
+            <div ng-show="editForm.businessField.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.businessField.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.consularFileNbrCCIMA" for="field_consularFileNbrCCIMA">Consular File Nbr CCIMA</label>
+            <input type="text" class="form-control" name="consularFileNbrCCIMA" id="field_consularFileNbrCCIMA"
+                    ng-model="vm.partner.consularFileNbrCCIMA"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.partnerType" for="field_partnerType">Partner Type</label>
+            <select class="form-control" name="partnerType" ng-model="vm.partner.partnerType" id="field_partnerType">
+                <option value="AMBASSY" translate="ampfrontApp.PartnerType.AMBASSY">AMBASSY</option>
+                <option value="COMPANY" translate="ampfrontApp.PartnerType.COMPANY">COMPANY</option>
+                <option value="ORGANISATION" translate="ampfrontApp.PartnerType.ORGANISATION">ORGANISATION</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.partnerAccreditionLevel" for="field_partnerAccreditionLevel">Partner Accredition Level</label>
+            <select class="form-control" name="partnerAccreditionLevel" ng-model="vm.partner.partnerAccreditionLevel" id="field_partnerAccreditionLevel">
+                <option value="LEVEL1" translate="ampfrontApp.PartnerAccreditionLevel.LEVEL1">LEVEL1</option>
+                <option value="LEVEL2" translate="ampfrontApp.PartnerAccreditionLevel.LEVEL2">LEVEL2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.adress" for="field_adress">Adress</label>
+            <input type="text" class="form-control" name="adress" id="field_adress"
+                    ng-model="vm.partner.adress"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.email" for="field_email">Email</label>
+            <input type="email" class="form-control" name="email" id="field_email"
+                    ng-model="vm.partner.email"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.phone" for="field_phone">Phone</label>
+            <input type="text" class="form-control" name="phone" id="field_phone"
+                    ng-model="vm.partner.phone"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="ampfrontApp.partner.emissionDate" for="field_emissionDate">Emission Date</label>
+                <div class="input-group">
+                    <input id="field_emissionDate" type="text" class="form-control" name="emissionDate" datetime-picker="{{dateformat}}" ng-model="vm.partner.emissionDate" is-open="vm.datePickerOpenStatus.emissionDate"
+                      />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('emissionDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

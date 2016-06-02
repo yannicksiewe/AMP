@@ -1,0 +1,36 @@
+{
+    "ampfrontApp": {
+        "partner" : {
+            "home": {
+                "title": "Partenaires",
+                "createLabel": "Créer un nouveau Partenaire",
+                "createOrEditLabel": "Créer ou éditer un Partenaire",
+                "search": "Recherche pour Partenaire"
+            },
+            "created": "Un nouveau Partenaire a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Partenaire avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Partenaire avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Partenaire {{ id }} ?"
+            },
+            "detail": {
+                "title": "Partenaire"
+            },
+            "country": "Pays",
+            "companyName": "Nom / Raison Social",
+            "representant": "Representant",
+            "tradeRegisterNbr": "No Registre Commerce",
+            "ratepayerNbr": "No Contribuable",
+            "patent": "Patente (actif)",
+            "companyCreationDate": "Date de creation",
+            "businessField": "Secteur Activité",
+            "consularFileNbrCCIMA": "No Fichier Consulaire CCIMA",
+            "partnerType": "Type de Partenaire",
+            "partnerAccreditionLevel": "Niveau d'Accreditation",
+            "adress": "Adresse Societe",
+            "email": "Email",
+            "phone": "Telephone",
+            "emissionDate": "Date Emission"
+        }
+    }
+}

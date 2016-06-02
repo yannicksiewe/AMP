@@ -1,0 +1,98 @@
+<div>
+    <h2 translate="ampfrontApp.member.home.title">Members</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="member.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="ampfrontApp.member.home.createLabel">
+                        Create new Member
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped" data-st-table="vm.members" data-st-pipe="vm.loadAll">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="picture"><span translate="ampfrontApp.member.picture">Picture</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="name"><span translate="ampfrontApp.member.name">Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="cni"><span translate="ampfrontApp.member.cni">Cni</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="passportNumber"><span translate="ampfrontApp.member.passportNumber">Passport Number</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="company"><span translate="ampfrontApp.member.company">Company</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="email"><span translate="ampfrontApp.member.email">Email</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="phone"><span translate="ampfrontApp.member.phone">Phone</span> <span class="glyphicon glyphicon-sort"></span></th>
+
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                    </th>
+                    <th>
+                        <input st-search="name"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="cni"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="passportNumber"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="company"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="email"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="phone"  class="input-sm form-control" type="search"/>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="member in vm.members track by member.id">
+                    <td>
+                        <a ng-if="member.picture" ng-click="vm.openFile(member.pictureContentType, member.picture)">
+                            <img data-ng-src="{{'data:' + member.pictureContentType + ';base64,' + member.picture}}" style="max-height: 30px;"/>
+                        </a>
+                        <span ng-if="member.picture">{{member.pictureContentType}}, {{vm.byteSize(member.picture)}}</span>
+                    </td>
+                    <td>{{member.name}}</td>
+                    <td>{{member.cni}}</td>
+                    <td>{{member.passportNumber}}</td>
+                    <td>{{member.company}}</td>
+                    <td>{{member.email}}</td>
+                    <td>{{member.phone}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="member-detail({id:member.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="member.edit({id:member.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="member.delete({id:member.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount"></jhi-item-count>
+        <uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
+    </div>
+</div>

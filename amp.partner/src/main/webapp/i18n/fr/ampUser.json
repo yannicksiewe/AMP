@@ -1,0 +1,32 @@
+{
+    "ampfrontApp": {
+        "ampUser" : {
+            "home": {
+                "title": "Utilisateurs",
+                "createLabel": "Créer un nouveau Utilisateur",
+                "createOrEditLabel": "Créer ou éditer un Utilisateur",
+                "search": "Recherche pour Utilisateur"
+            },
+            "created": "Un nouveau Utilisateur a été créé avec l'identifiant {{ param }}",
+            "updated": "L'utilisateur avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "L'utilisateur avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer l'utilisateur {{ id }} ?"
+            },
+            "detail": {
+                "title": "Utilisateur"
+            },
+            "ouIdentif": "Partenaire",
+            "loginName": "Nom de Connexion",
+            "loginAlias": "Login Alias",
+            "email": "Email",
+            "fullName": "Nom Complet",
+            "pwdHashed": "Pwd Hashed",
+            "disableLogin": "Compte Désactivé",
+            "accountLocked": "Compte Bloqué",
+            "credtlExpir": "Credt Expir",
+            "accountExpir": "Account Expir",
+            "langIso2": "Lang Iso 2"
+        }
+    }
+}

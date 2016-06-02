@@ -1,0 +1,84 @@
+
+<div>
+    <h2><span translate="ampfrontApp.partner.detail.title">Partner</span> {{vm.partner.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <dl class="dl-horizontal jh-entity-details">
+                    <dt><span translate="ampfrontApp.partner.country">Country</span></dt>
+                    <dd>
+                        <span>{{vm.partner.country}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.companyName">Company Name</span></dt>
+                    <dd>
+                        <span>{{vm.partner.companyName}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.representant">Representant</span></dt>
+                    <dd>
+                        <span>{{vm.partner.representant}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.tradeRegisterNbr">Trade Register Nbr</span></dt>
+                    <dd>
+                        <span>{{vm.partner.tradeRegisterNbr}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.ratepayerNbr">Ratepayer Nbr</span></dt>
+                    <dd>
+                        <span>{{vm.partner.ratepayerNbr}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.patent">Patent</span></dt>
+                    <dd>
+                        <span>{{vm.partner.patent}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.companyCreationDate">Company Creation Date</span></dt>
+                    <dd>
+                        <span>{{vm.partner.companyCreationDate | date:'medium'}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.businessField">Business Field</span></dt>
+                    <dd>
+                        <span>{{vm.partner.businessField}}</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-lg-6">
+                <dl class="dl-horizontal jh-entity-details">
+                    <dt><span translate="ampfrontApp.partner.consularFileNbrCCIMA">Consular File Nbr CCIMA</span></dt>
+                    <dd>
+                        <span>{{vm.partner.consularFileNbrCCIMA}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.partnerType">Partner Type</span></dt>
+                    <dd>
+                        <span translate="{{'ampfrontApp.PartnerType.' + vm.partner.partnerType}}">{{vm.partner.partnerType}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.partnerAccreditionLevel">Partner Accredition Level</span></dt>
+                    <dd>
+                        <span translate="{{'ampfrontApp.PartnerAccreditionLevel.' + vm.partner.partnerAccreditionLevel}}">{{vm.partner.partnerAccreditionLevel}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.adress">Adress</span></dt>
+                    <dd>
+                        <span>{{vm.partner.adress}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.email">Email</span></dt>
+                    <dd>
+                        <span>{{vm.partner.email}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.phone">Phone</span></dt>
+                    <dd>
+                        <span>{{vm.partner.phone}}</span>
+                    </dd>
+                    <dt><span translate="ampfrontApp.partner.emissionDate">Emission Date</span></dt>
+                    <dd>
+                        <span>{{vm.partner.emissionDate | date:'medium'}}</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,89 @@
+<div>
+    <h2 translate="ampfrontApp.partner.home.title">Partners</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="partner.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  translate="ampfrontApp.partner.home.createLabel">
+                        Create new Partner
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped" data-st-table="vm.partners" data-st-pipe="vm.loadAll">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="country"><span translate="ampfrontApp.partner.country">Country</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="companyName"><span translate="ampfrontApp.partner.companyName">Company Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="representant"><span translate="ampfrontApp.partner.representant">Representant</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="tradeRegisterNbr"><span translate="ampfrontApp.partner.tradeRegisterNbr">Trade Register Nbr</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="email"><span translate="ampfrontApp.partner.email">Email</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="phone"><span translate="ampfrontApp.partner.phone">Phone</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <input st-search="country"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="companyName"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="representant"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="tradeRegisterNbr"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="email"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th>
+                        <input st-search="phone"  class="input-sm form-control" type="search"/>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="partner in vm.partners track by partner.id">
+                    <td>{{partner.country}}</td>
+                    <td>{{partner.companyName}}</td>
+                    <td>{{partner.representant}}</td>
+                    <td>{{partner.tradeRegisterNbr}}</td>
+                    <td>{{partner.email}}</td>
+                    <td>{{partner.phone}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="partner-detail({id:partner.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="partner.edit({id:partner.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="partner.delete({id:partner.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount"></jhi-item-count>
+        <uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
+    </div>
+</div>
