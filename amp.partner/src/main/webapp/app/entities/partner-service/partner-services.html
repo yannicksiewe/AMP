@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="partner-service.new" >
+                <button class="btn btn-primary" ui-sref="partner-detail.new-service({ partnerId: vm.partner.id })" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span  translate="ampfrontApp.partnerService.home.createLabel">
                         Create new Partner Service
@@ -17,10 +17,10 @@
     <div class="table-responsive">
         <table class="jh-table table table-striped">
             <thead>
-                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
-                    <th jh-sort-by="serviceName"><span translate="ampfrontApp.partnerService.serviceName">Service Name</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="description"><span translate="ampfrontApp.partnerService.description">Description</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="partnerId"><span translate="ampfrontApp.partnerService.partnerId">Partner Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <tr>
+                    <th><span translate="ampfrontApp.partnerService.serviceName">Service Name</span></th>
+                    <th><span translate="ampfrontApp.partnerService.description">Description</span></th>
+                    <th><span translate="ampfrontApp.partnerService.partnerId">Partner Id</span></th>
                     <th></th>
                 </tr>
             </thead>
@@ -38,13 +38,13 @@
                                 <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="partner-service.edit({id:partnerService.id})"
+                                    ui-sref="partner-detail.edit-service({serviceId:partnerService.id, partnerId:vm.partner.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="partner-service.delete({id:partnerService.id})"
+                                    ui-sref="partner-detail.delete-service({serviceId:partnerService.id, partnerId:vm.partner.id})"
                                     class="btn btn-danger btn-sm">
                                 <span class="glyphicon glyphicon-remove-circle"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.delete"></span>
@@ -54,9 +54,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="text-center">
-        <jhi-item-count page="vm.page" total="vm.queryCount"></jhi-item-count>
-        <uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
     </div>
 </div>

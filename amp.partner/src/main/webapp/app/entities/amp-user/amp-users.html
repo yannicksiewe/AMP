@@ -1,13 +1,10 @@
-<div>
-
+<div ng-cloak>
+    <h2 translate="ampfrontApp.ampUser.home.title">Amp Users</h2>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
-                <h2 style="margin-top: 0px;" translate="ampfrontApp.ampUser.home.title">Amp Users</h2>
-            </div>
-            <div class="col-lg-4">
-                <button class="btn btn-primary" ui-sref="amp-user.new" >
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="partner-detail.new-user({ partnerId: vm.partner.id })" >
                     <span class="glyphicon glyphicon-plus"></span>
                     <span  translate="ampfrontApp.ampUser.home.createLabel">
                         Create new Amp User
@@ -18,33 +15,17 @@
     </div>
     <br/>
     <div class="table-responsive">
-        <table class="jh-table table table-striped" data-st-table="vm.ampUsers" data-st-pipe="vm.loadAll">
+        <table class="jh-table table table-striped">
             <thead>
-                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
-                    <th jh-sort-by="ouIdentif"><span translate="ampfrontApp.ampUser.ouIdentif">Ou Identif</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="loginName"><span translate="ampfrontApp.ampUser.loginName">Login Name</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="email"><span translate="ampfrontApp.ampUser.email">Email</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="fullName"><span translate="ampfrontApp.ampUser.fullName">Full Name</span> <span class="glyphicon glyphicon-sort"></span></th>
-                    <th jh-sort-by="accountLocked"><span translate="ampfrontApp.ampUser.accountLocked">Account Locked</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <tr>
+                    <th><span translate="ampfrontApp.ampUser.ouIdentif">Ou Identif</span> </th>
+                    <th><span translate="ampfrontApp.ampUser.loginName">Login Name</span> </th>
+                    <th><span translate="ampfrontApp.ampUser.email">Email</span> </th>
+                    <th><span translate="ampfrontApp.ampUser.fullName">Full Name</span> </th>
+                    <th><span translate="ampfrontApp.ampUser.accountLocked">Account Locked</span> </th>
                     <th></th>
                 </tr>
-                <tr>
-                    <th>
-                        <input st-search="ouIdentif"  class="input-sm form-control" type="search"/>
-                    </th>
-                    <th>
-                        <input st-search="loginName"  class="input-sm form-control" type="search"/>
-                    </th>
-                    <th>
-                        <input st-search="email"  class="input-sm form-control" type="search"/>
-                    </th>
-                    <th>
-                        <input st-search="fullName"  class="input-sm form-control" type="search"/>
-                    </th>
-                    <th>
-                        <input st-search="accountLocked"  class="input-sm form-control" type="search"/>
-                    </th>
-                </tr>
+
             </thead>
             <tbody>
                 <tr ng-repeat="ampUser in vm.ampUsers track by ampUser.id">
@@ -62,7 +43,7 @@
                                 <span class="hidden-xs hidden-sm" translate="entity.action.view"></span>
                             </button>
                             <button type="submit"
-                                    ui-sref="amp-user.edit({id:ampUser.id})"
+                                    ui-sref="partner-detail.edit({ampUserId:ampUser.id, partnerId:vm.partner.id})"
                                     class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-pencil"></span>
                                 <span class="hidden-xs hidden-sm" translate="entity.action.edit"></span>
@@ -78,9 +59,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="text-center">
-        <jhi-item-count page="vm.page" total="vm.queryCount"></jhi-item-count>
-        <uib-pagination class="pagination-sm" total-items="vm.totalItems" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
     </div>
 </div>

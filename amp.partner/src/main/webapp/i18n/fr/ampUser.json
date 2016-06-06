@@ -21,7 +21,7 @@
             "loginAlias": "Login Alias",
             "email": "Email",
             "fullName": "Nom Complet",
-            "pwdHashed": "Pwd Hashed",
+            "pwdHashed": "Mot de passe",
             "disableLogin": "Compte Désactivé",
             "accountLocked": "Compte Bloqué",
             "credtlExpir": "Credt Expir",

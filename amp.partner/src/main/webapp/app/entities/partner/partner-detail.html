@@ -77,8 +77,17 @@
     </dl>
 
     <button type="submit"
-            onclick="window.history.back()"
+            ui-sref="amp-user"
             class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
     </button>
+   <hr>
+    <uib-tabset active="active">
+    <uib-tab index="0" heading="Utilisateurs">
+        <div ng-include="'app/entities/amp-user/amp-users.html'"></div>
+    </uib-tab>
+    <uib-tab index="1" heading="Services" >
+        <div ng-include="'app/entities/partner-service/partner-services.html'"></div>
+    </uib-tab>
+    </uib-tabset>
 </div>

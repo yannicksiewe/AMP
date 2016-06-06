@@ -23,41 +23,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="partner.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/partner.json">
+      <file leaf-file-name="partner-detail.controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="1050">
+              <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partner-dialog.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-dialog.html">
+      <file leaf-file-name="amp-user.state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.state.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.833333" vertical-offset="1729" max-vertical-offset="2520">
-              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="1635">
+              <caret line="76" column="45" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partner-detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="partner-services.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-services.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.5" vertical-offset="156" max-vertical-offset="960">
+              <caret line="40" column="126" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner-service.state.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36594203" vertical-offset="912" max-vertical-offset="1860">
+              <caret line="81" column="82" selection-start-line="81" selection-start-column="82" selection-end-line="81" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partner-detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6965866" vertical-offset="544" max-vertical-offset="1350">
-              <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+            <state vertical-scroll-proportion="-23.25" vertical-offset="627" max-vertical-offset="1485">
+              <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partners.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partners.html">
+      <file leaf-file-name="amp-user.controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.958334" vertical-offset="145" max-vertical-offset="1425">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1110">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -73,12 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/form/pagination.constants.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/form/minbytes.directive.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/form/maxbytes.directive.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/alert/alert-error.directive.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/alert/alert.service.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/components/alert/alert.directive.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/notification.interceptor.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.js" />
@@ -97,33 +111,39 @@
         <option value="$PROJECT_DIR$/src/main/webapp/i18n/fr/member.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/member/member-dialog.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/member/members.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-services.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/home/home.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.service.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.state.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-delete-dialog.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-detail.controller.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.service.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.state.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-delete-dialog.controller.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-dialog.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.service.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.state.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-delete-dialog.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-detail.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-dialog.controller.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partners.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/i18n/fr/partner.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/app.module.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.state.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/i18n/fr/partnerService.json" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/i18n/fr/ampUser.json" />
         <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.controller.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.controller.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.controller.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-users.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.state.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-dialog.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-services.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.state.js" />
       </list>
     </option>
   </component>
@@ -385,7 +405,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="partner-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp.partner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="partner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp.client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp.partner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp-user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,48 +610,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/components/alert/alert.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2145">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/components/alert/alert.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/notification.interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/blocks/interceptor/auth.interceptor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/blocks/handlers/translation.handler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
@@ -676,22 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-users.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/layouts/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36567163" vertical-offset="96" max-vertical-offset="900">
@@ -716,26 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333" vertical-offset="1261" max-vertical-offset="2340">
-          <caret line="99" column="93" selection-start-line="99" selection-start-column="93" selection-end-line="99" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/home/home.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="805">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -748,33 +762,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2595">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-delete-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-detail.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
@@ -796,25 +786,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2715">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-delete-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
@@ -828,26 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2475">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -868,6 +826,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/partner.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.833333" vertical-offset="1129" max-vertical-offset="2340">
+          <caret line="99" column="93" selection-start-line="99" selection-start-column="93" selection-end-line="99" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/app.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/partnerService.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13059701" vertical-offset="0" max-vertical-offset="804">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-dialog.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7427536" vertical-offset="0" max-vertical-offset="828">
@@ -878,32 +868,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partners.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.958334" vertical-offset="145" max-vertical-offset="1425">
+        <state vertical-scroll-proportion="0.87863463" vertical-offset="145" max-vertical-offset="1425">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/partner.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="630">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-dialog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.833333" vertical-offset="1729" max-vertical-offset="2520">
+        <state vertical-scroll-proportion="2.3653603" vertical-offset="94" max-vertical-offset="2520">
           <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i18n/fr/ampUser.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="570">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34134007" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-detail.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.072463766" vertical-offset="0" max-vertical-offset="828">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1110">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76086956" vertical-offset="45" max-vertical-offset="1740">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user-dialog.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner.state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7863354" vertical-offset="717" max-vertical-offset="2760">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5597015" vertical-offset="225" max-vertical-offset="1035">
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6965866" vertical-offset="544" max-vertical-offset="1350">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+        <state vertical-scroll-proportion="-23.25" vertical-offset="627" max-vertical-offset="1485">
+          <caret line="79" column="29" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service-dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63380283" vertical-offset="45" max-vertical-offset="840">
+          <caret line="36" column="67" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner/partner-detail.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="1050">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/amp-user/amp-user.state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="762" max-vertical-offset="1635">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.5" vertical-offset="156" max-vertical-offset="960">
+          <caret line="40" column="126" selection-start-line="40" selection-start-column="126" selection-end-line="40" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/entities/partner-service/partner-service.state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36594203" vertical-offset="912" max-vertical-offset="1860">
+          <caret line="81" column="82" selection-start-line="81" selection-start-column="82" selection-end-line="81" selection-end-column="82" />
           <folding />
         </state>
       </provider>

@@ -9,48 +9,7 @@
 
     function stateConfig($stateProvider) {
         $stateProvider
-        .state('partner-service', {
-            parent: 'entity',
-            url: '/partner-service?page&sort&search',
-            data: {
-                authorities: ['ROLE_USER'],
-                pageTitle: 'ampfrontApp.partnerService.home.title'
-            },
-            views: {
-                'content@': {
-                    templateUrl: 'app/entities/partner-service/partner-services.html',
-                    controller: 'PartnerServiceController',
-                    controllerAs: 'vm'
-                }
-            },
-            params: {
-                page: {
-                    value: '1',
-                    squash: true
-                },
-                sort: {
-                    value: 'id,asc',
-                    squash: true
-                },
-                search: null
-            },
-            resolve: {
-                pagingParams: ['$stateParams', 'PaginationUtil', function ($stateParams, PaginationUtil) {
-                    return {
-                        page: PaginationUtil.parsePage($stateParams.page),
-                        sort: $stateParams.sort,
-                        predicate: PaginationUtil.parsePredicate($stateParams.sort),
-                        ascending: PaginationUtil.parseAscending($stateParams.sort),
-                        search: $stateParams.search
-                    };
-                }],
-                translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                    $translatePartialLoader.addPart('partnerService');
-                    $translatePartialLoader.addPart('global');
-                    return $translate.refresh();
-                }]
-            }
-        })
+
         .state('partner-service-detail', {
             parent: 'entity',
             url: '/partner-service/{id}',
@@ -75,9 +34,9 @@
                 }]
             }
         })
-        .state('partner-service.new', {
-            parent: 'partner-service',
-            url: '/new',
+        .state('partner-detail.new-service', {
+            parent: 'partner-detail',
+            url: '/newservice?partnerId',
             data: {
                 authorities: ['ROLE_USER']
             },
@@ -93,21 +52,21 @@
                             return {
                                 serviceName: null,
                                 description: null,
-                                partnerId: null,
+                                partnerId: $stateParams.partnerId,
                                 id: null
                             };
                         }
                     }
                 }).result.then(function() {
-                    $state.go('partner-service', null, { reload: true });
+                        $state.go('partner-detail', {id:$stateParams.partnerId}, { reload: true });
                 }, function() {
-                    $state.go('partner-service');
+                        $state.go('^');
                 });
             }]
         })
-        .state('partner-service.edit', {
-            parent: 'partner-service',
-            url: '/{id}/edit',
+        .state('partner-detail.edit-service', {
+            parent: 'partner-detail',
+            url: '/editservice/{serviceId}?partnerId',
             data: {
                 authorities: ['ROLE_USER']
             },
@@ -120,19 +79,19 @@
                     size: 'lg',
                     resolve: {
                         entity: ['PartnerService', function(PartnerService) {
-                            return PartnerService.get({id : $stateParams.id});
+                            return PartnerService.get({id : $stateParams.serviceId});
                         }]
                     }
                 }).result.then(function() {
-                    $state.go('partner-service', null, { reload: true });
+                        $state.go('partner-detail', {id:$stateParams.partnerId}, { reload: true });
                 }, function() {
                     $state.go('^');
                 });
             }]
         })
-        .state('partner-service.delete', {
-            parent: 'partner-service',
-            url: '/{id}/delete',
+        .state('partner-detail.delete-service', {
+            parent: 'partner-detail',
+            url: '/deleteservice/{serviceId}?partnerId',
             data: {
                 authorities: ['ROLE_USER']
             },
@@ -144,11 +103,11 @@
                     size: 'md',
                     resolve: {
                         entity: ['PartnerService', function(PartnerService) {
-                            return PartnerService.get({id : $stateParams.id});
+                            return PartnerService.get({id : $stateParams.serviceId});
                         }]
                     }
                 }).result.then(function() {
-                    $state.go('partner-service', null, { reload: true });
+                        $state.go('partner-detail', {id:$stateParams.partnerId}, { reload: true });
                 }, function() {
                     $state.go('^');
                 });

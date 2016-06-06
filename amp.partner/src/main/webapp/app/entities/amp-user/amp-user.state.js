@@ -9,48 +9,7 @@
 
     function stateConfig($stateProvider) {
         $stateProvider
-        .state('amp-user', {
-            parent: 'entity',
-            url: '/amp-user?page&sort&search',
-            data: {
-                authorities: [],
-                pageTitle: 'ampfrontApp.ampUser.home.title'
-            },
-            views: {
-                'content@': {
-                    templateUrl: 'app/entities/amp-user/amp-users.html',
-                    controller: 'AmpUserController',
-                    controllerAs: 'vm'
-                }
-            },
-            params: {
-                page: {
-                    value: '1',
-                    squash: true
-                },
-                sort: {
-                    value: 'id,asc',
-                    squash: true
-                },
-                search: null
-            },
-            resolve: {
-                pagingParams: ['$stateParams', 'PaginationUtil', function ($stateParams, PaginationUtil) {
-                    return {
-                        page: PaginationUtil.parsePage($stateParams.page),
-                        sort: $stateParams.sort,
-                        predicate: PaginationUtil.parsePredicate($stateParams.sort),
-                        ascending: PaginationUtil.parseAscending($stateParams.sort),
-                        search: $stateParams.search
-                    };
-                }],
-                translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
-                    $translatePartialLoader.addPart('ampUser');
-                    $translatePartialLoader.addPart('global');
-                    return $translate.refresh();
-                }]
-            }
-        })
+
         .state('amp-user-detail', {
             parent: 'entity',
             url: '/amp-user/{id}',
@@ -75,9 +34,9 @@
                 }]
             }
         })
-        .state('amp-user.new', {
-            parent: 'amp-user',
-            url: '/new',
+        .state('partner-detail.new-user', {
+            parent: 'partner-detail',
+            url: '/new?partnerId',
             data: {
                 authorities: []
             },
@@ -91,7 +50,7 @@
                     resolve: {
                         entity: function () {
                             return {
-                                ouIdentif: null,
+                                ouIdentif: $stateParams.partnerId,
                                 loginName: null,
                                 loginAlias: null,
                                 email: null,
@@ -107,15 +66,15 @@
                         }
                     }
                 }).result.then(function() {
-                    $state.go('amp-user', null, { reload: true });
+                    $state.go('partner-detail', {id:$stateParams.partnerId}, { reload: true });
                 }, function() {
-                    $state.go('amp-user');
+                        $state.go('^');
                 });
             }]
         })
-        .state('amp-user.edit', {
-            parent: 'amp-user',
-            url: '/{id}/edit',
+        .state('partner-detail.edit', {
+            parent: 'partner-detail',
+            url: '/edit/{ampUserId}?partnerId',
             data: {
                 authorities: []
             },
@@ -128,40 +87,17 @@
                     size: 'lg',
                     resolve: {
                         entity: ['AmpUser', function(AmpUser) {
-                            return AmpUser.get({id : $stateParams.id});
+                            return AmpUser.get({id : $stateParams.ampUserId});
                         }]
                     }
                 }).result.then(function() {
-                    $state.go('amp-user', null, { reload: true });
+                        $state.go('partner-detail', {id:$stateParams.partnerId}, { reload: true });
                 }, function() {
-                    $state.go('^');
+                        $state.go('^');
                 });
             }]
         })
-        .state('amp-user.delete', {
-            parent: 'amp-user',
-            url: '/{id}/delete',
-            data: {
-                authorities: []
-            },
-            onEnter: ['$stateParams', '$state', '$uibModal', function($stateParams, $state, $uibModal) {
-                $uibModal.open({
-                    templateUrl: 'app/entities/amp-user/amp-user-delete-dialog.html',
-                    controller: 'AmpUserDeleteController',
-                    controllerAs: 'vm',
-                    size: 'md',
-                    resolve: {
-                        entity: ['AmpUser', function(AmpUser) {
-                            return AmpUser.get({id : $stateParams.id});
-                        }]
-                    }
-                }).result.then(function() {
-                    $state.go('amp-user', null, { reload: true });
-                }, function() {
-                    $state.go('^');
-                });
-            }]
-        });
+
     }
 
 })();

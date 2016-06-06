@@ -72,6 +72,9 @@
                     $translatePartialLoader.addPart('partner');
                     $translatePartialLoader.addPart('partnerType');
                     $translatePartialLoader.addPart('partnerAccreditionLevel');
+                    $translatePartialLoader.addPart('ampUser');
+                    $translatePartialLoader.addPart('partnerService');
+                    $translatePartialLoader.addPart('global');
                     return $translate.refresh();
                 }],
                 entity: ['$stateParams', 'Partner', function($stateParams, Partner) {
