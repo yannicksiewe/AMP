@@ -1,0 +1,9 @@
+{
+    "ampfrontApp": {
+        "PartnerAccreditionLevel" : {
+            "null": "",
+            "LEVEL1": "NIVEAU1",
+            "LEVEL2": "NIVEAU2"
+        }
+    }
+}

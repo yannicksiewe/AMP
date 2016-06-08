@@ -376,5 +376,6 @@
 		<module>amp.admin</module>
 		<module>amp.member</module>
 		<module>amp.partner</module>
+		<module>amp.espacepartner</module>
 	</modules>
 </project>

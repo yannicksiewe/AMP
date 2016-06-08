@@ -1,0 +1,10 @@
+{
+    "ampfrontApp": {
+        "Section" : {
+            "null": "",
+            "SERVICE_PRESTATION": "PRESTATION DE SERVICES",
+            "GENERAL_TRADE": "COMMERCE GENERAL",
+            "INDUSTRY": "INDUSTRIE"
+        }
+    }
+}

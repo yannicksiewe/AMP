@@ -24,8 +24,12 @@ public class Member extends CoreAbstEntity {
     @NotNull
     @Column(name = "name", nullable = false)
     private String name;
-
+    
     @NotNull
+    @Column(name = "identifiant", nullable = false)
+    private String identifiant;
+
+	@NotNull
     @Column(name = "cni", nullable = false)
     private String cni;
 
@@ -158,5 +162,13 @@ public class Member extends CoreAbstEntity {
     public void setPictureContentType(String pictureContentType) {
         this.pictureContentType = pictureContentType;
     }
+    
+    public String getIdentifiant() {
+		return identifiant;
+	}
+
+	public void setIdentifiant(String identifiant) {
+		this.identifiant = identifiant;
+	}
 
 }

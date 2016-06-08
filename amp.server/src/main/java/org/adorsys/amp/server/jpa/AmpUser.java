@@ -53,7 +53,6 @@ public class AmpUser extends CoreAbstEntity {
 	private Date accountExpir;
 	
 	@Column
-	@NotNull
 	private String langIso2="fr";
 
 	@PrePersist

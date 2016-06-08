@@ -1,0 +1,75 @@
+
+<div>
+    <fieldset>
+        <legend>Trouver un Membre</legend>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="col-lg-4">Identifiant du membre: </label>
+                <input class="form-control" type="text" ng-model="vm.query">
+                <button type="button" ng-click="vm.search(vm.query)" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Trouver</button>
+            </div>
+
+        </form>
+    </fieldset>
+    <hr>
+    <h2 ng-show="vm.isFill()"><span translate="ampfrontApp.member.detail.title">Member</span> {{vm.member.name}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <div ng-show="vm.show==true" class="alert alert-warning">Pas de membre correspondant à cet identifiant.</div>
+    <dl class="dl-horizontal jh-entity-details" ng-show="vm.isFill()">
+        <dt><span translate="ampfrontApp.member.picture">Picture</span></dt>
+        <dd>
+            <div ng-if="vm.member.picture">
+                <a ng-click="vm.openFile(vm.member.pictureContentType, vm.member.picture)">
+                    <img data-ng-src="{{'data:' + vm.member.pictureContentType + ';base64,' + vm.member.picture}}" style="max-width: 100%;"/>
+                </a>
+                {{vm.member.pictureContentType}}, {{vm.byteSize(vm.member.picture)}}
+            </div>
+        </dd>
+        <dt><span>Identifiant</span></dt>
+        <dd>
+            <span>{{vm.member.identifiant}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.name">Name</span></dt>
+        <dd>
+            <span>{{vm.member.name}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.cni">Cni</span></dt>
+        <dd>
+            <span>{{vm.member.cni}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.passportNumber">Passport Number</span></dt>
+        <dd>
+            <span>{{vm.member.passportNumber}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.company">Company</span></dt>
+        <dd>
+            <span>{{vm.member.company}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.positionInCompany">Position In Company</span></dt>
+        <dd>
+            <span>{{vm.member.positionInCompany}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.section">Section</span></dt>
+        <dd>
+            <span translate="{{'ampfrontApp.Section.' + vm.member.section}}">{{vm.member.section}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.activationDate">Activation Date</span></dt>
+        <dd>
+            <span>{{vm.member.activationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.expirationDate">Expiration Date</span></dt>
+        <dd>
+            <span>{{vm.member.expirationDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.email">Email</span></dt>
+        <dd>
+            <span>{{vm.member.email}}</span>
+        </dd>
+        <dt><span translate="ampfrontApp.member.phone">Phone</span></dt>
+        <dd>
+            <span>{{vm.member.phone}}</span>
+        </dd>
+
+    </dl>
+</div>
