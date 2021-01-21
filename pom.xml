@@ -29,7 +29,7 @@
 		<hibernate.javax.persistence.artifactId>hibernate-jpa-2.1-api</hibernate.javax.persistence.artifactId>
 		<version.org.codehaus.jackson>1.9.9</version.org.codehaus.jackson>
 		<version.deltaspike>1.5.4</version.deltaspike>
-		<jackson.version>2.5.4</jackson.version>
+		<jackson.version>2.12.1</jackson.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
