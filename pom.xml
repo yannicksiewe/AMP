@@ -23,7 +23,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<github.global.server>github</github.global.server>
 		<version.wildfly>10.0.0.Final</version.wildfly>
-		<version.org.jboss.resteasy>3.0.6.Final</version.org.jboss.resteasy>
+		<version.org.jboss.resteasy>3.0.11.Final</version.org.jboss.resteasy>
 		<version.hibernate>4.3.10.Final</version.hibernate>
 		<version.hibernate-validator>4.3.2.Final</version.hibernate-validator>
 		<hibernate.javax.persistence.artifactId>hibernate-jpa-2.1-api</hibernate.javax.persistence.artifactId>
